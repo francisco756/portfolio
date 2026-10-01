@@ -126,8 +126,9 @@
   .img-full img { height: auto; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 40px; }
   .grid-2 .media { aspect-ratio: 9/16; }
-  .grid-4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 40px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 720px; margin-bottom: 40px; }
   .grid-4 .media { aspect-ratio: 3/4; }
+  @media (max-width: 640px) { .grid-4 { gap: 4px; } }
 
   .project-text { display: grid; grid-template-columns: 160px 1fr; gap: 24px 40px; margin-bottom: 44px; }
   .text-label { font-size: 11px; font-weight: 600; color: var(--mid); letter-spacing: 0.08em; padding-top: 3px; text-transform: uppercase; }
@@ -292,9 +293,11 @@
   <p class="project-handle reveal">Product content · freelance · Chile</p>
   <div class="grid-4 reveal">
     <div class="media"><img src="assets/img/zoom-white-workout.jpg" alt="Zoom White — workout" width="673" height="900" loading="lazy" decoding="async"></div>
-    <div class="media"><img src="assets/img/zoom-purple-gaming.jpg" alt="Zoom Purple — gaming" width="673" height="900" loading="lazy" decoding="async"></div>
+    <div class="media"><img src="assets/img/zoom-purple-gym.jpg" alt="Zoom Purple — gym" width="896" height="1200" loading="lazy" decoding="async"></div>
     <div class="media"><img src="assets/img/zoom-white-desk.jpg" alt="Zoom White — desk" width="673" height="900" loading="lazy" decoding="async"></div>
+    <div class="media"><img src="assets/img/zoom-purple-setup.jpg" alt="Zoom Purple — gaming setup" width="896" height="1200" loading="lazy" decoding="async"></div>
     <div class="media"><img src="assets/img/zoom-purple-festival.jpg" alt="Zoom Purple — festival" width="673" height="900" loading="lazy" decoding="async"></div>
+    <div class="media"><img src="assets/img/zoom-purple-jenga.jpg" alt="Zoom Purple — game night" width="896" height="1200" loading="lazy" decoding="async"></div>
   </div>
   <div class="project-text reveal">
     <span class="text-label">Brief</span>
