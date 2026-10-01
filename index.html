@@ -126,9 +126,9 @@
   .img-full img { height: auto; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 40px; }
   .grid-2 .media { aspect-ratio: 9/16; }
-  .grid-4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 40px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 720px; margin-bottom: 40px; }
   .grid-4 .media { aspect-ratio: 3/4; }
-  @media (min-width: 641px) { .grid-4 { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .grid-4 { gap: 4px; } }
 
   .project-text { display: grid; grid-template-columns: 160px 1fr; gap: 24px 40px; margin-bottom: 44px; }
   .text-label { font-size: 11px; font-weight: 600; color: var(--mid); letter-spacing: 0.08em; padding-top: 3px; text-transform: uppercase; }
